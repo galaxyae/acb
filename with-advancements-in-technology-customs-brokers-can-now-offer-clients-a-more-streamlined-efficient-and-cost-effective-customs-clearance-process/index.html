@@ -1,0 +1,1555 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="pingback" href="../xmlrpc.php" />
+
+    <script type="text/javascript">
+      document.documentElement.className = "js";
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <script id="diviarea-loader">
+      window.DiviPopupData = window.DiviAreaConfig = {
+        zIndex: 1000000,
+        animateSpeed: 400,
+        triggerClassPrefix: "show-popup-",
+        idAttrib: "data-popup",
+        modalIndicatorClass: "is-modal",
+        blockingIndicatorClass: "is-blocking",
+        defaultShowCloseButton: true,
+        withCloseClass: "with-close",
+        noCloseClass: "no-close",
+        triggerCloseClass: "close",
+        singletonClass: "single",
+        darkModeClass: "dark",
+        noShadowClass: "no-shadow",
+        altCloseClass: "close-alt",
+        popupSelector: ".et_pb_section.popup",
+        initializeOnEvent: "et_pb_after_init_modules",
+        popupWrapperClass: "area-outer-wrap",
+        fullHeightClass: "full-height",
+        openPopupClass: "da-overlay-visible",
+        overlayClass: "da-overlay",
+        exitIndicatorClass: "on-exit",
+        hoverTriggerClass: "on-hover",
+        clickTriggerClass: "on-click",
+        onExitDelay: 2000,
+        notMobileClass: "not-mobile",
+        notTabletClass: "not-tablet",
+        notDesktopClass: "not-desktop",
+        baseContext: "body",
+        activePopupClass: "is-open",
+        closeButtonClass: "da-close",
+        withLoaderClass: "with-loader",
+        debug: false,
+        ajaxUrl: "https:\/\/acb-us.com\/wp-admin\/admin-ajax.php",
+        areaPrefix: "divi-area-",
+        sys: [],
+      };
+      var divimode_loader = (function () {
+        "use strict";
+        !(function (t) {
+          t.DiviArea = t.DiviPopup = { loaded: !1 };
+          var n = t.DiviArea,
+            i = (n.Hooks = {}),
+            o = {};
+          function r(t, n, i) {
+            var r, e, c;
+            if ("string" == typeof t)
+              if (o[t]) {
+                if (n)
+                  if ((r = o[t]) && i)
+                    for (c = r.length; c--; )
+                      (e = r[c]).callback === n &&
+                        e.context === i &&
+                        (r[c] = !1);
+                  else
+                    for (c = r.length; c--; )
+                      r[c].callback === n && (r[c] = !1);
+              } else o[t] = [];
+          }
+          function e(t, n, i, r) {
+            if ("string" == typeof t) {
+              var e = { callback: n, priority: i, context: r },
+                c = o[t];
+              c
+                ? (c.push(e),
+                  (c = (function (t) {
+                    var n,
+                      i,
+                      o,
+                      r,
+                      e = t.length;
+                    for (r = 1; r < e; r++)
+                      for (n = t[r], i = r; i > 0; i--)
+                        (o = t[i - 1]).priority > n.priority &&
+                          ((t[i] = o), (t[i - 1] = n));
+                    return t;
+                  })(c)))
+                : (c = [e]),
+                (o[t] = c);
+            }
+          }
+          function c(t, n, i) {
+            "string" == typeof n && (n = [n]);
+            var r,
+              e,
+              c = [];
+            for (r = 0; r < n.length; r++)
+              Array.prototype.push.apply(c, o[n[r]]);
+            for (e = 0; e < c.length; e++) {
+              var a = void 0;
+              c[e] &&
+                "function" == typeof c[e].callback &&
+                ("filter" === t
+                  ? void 0 !== (a = c[e].callback.apply(c[e].context, i)) &&
+                    (i[0] = a)
+                  : c[e].callback.apply(c[e].context, i));
+            }
+            if ("filter" === t) return i[0];
+          }
+          (i.silent = function () {
+            return i;
+          }),
+            (n.removeFilter = i.removeFilter =
+              function (t, n) {
+                r(t, n);
+              }),
+            (n.removeAction = i.removeAction =
+              function (t, n) {
+                r(t, n);
+              }),
+            (n.applyFilters = i.applyFilters =
+              function (t) {
+                for (var n = [], i = arguments.length - 1; i-- > 0; )
+                  n[i] = arguments[i + 1];
+                return c("filter", t, n);
+              }),
+            (n.doAction = i.doAction =
+              function (t) {
+                for (var n = [], i = arguments.length - 1; i-- > 0; )
+                  n[i] = arguments[i + 1];
+                c("action", t, n);
+              }),
+            (n.addFilter = i.addFilter =
+              function (n, i, o, r) {
+                e(n, i, parseInt(o || 10, 10), r || t);
+              }),
+            (n.addAction = i.addAction =
+              function (n, i, o, r) {
+                e(n, i, parseInt(o || 10, 10), r || t);
+              }),
+            (n.addActionOnce = i.addActionOnce =
+              function (n, i, o, c) {
+                e(n, i, parseInt(o || 10, 10), c || t),
+                  e(
+                    n,
+                    function () {
+                      r(n, i);
+                    },
+                    1 + parseInt(o || 10, 10),
+                    c || t
+                  );
+              });
+        })(window);
+        return {};
+      })();
+    </script>
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <script type="text/javascript">
+      let jqueryParams = [],
+        jQuery = function (r) {
+          return (jqueryParams = [...jqueryParams, r]), jQuery;
+        },
+        $ = function (r) {
+          return (jqueryParams = [...jqueryParams, r]), $;
+        };
+      (window.jQuery = jQuery), (window.$ = jQuery);
+      let customHeadScripts = !1;
+      (jQuery.fn = jQuery.prototype = {}),
+        ($.fn = jQuery.prototype = {}),
+        (jQuery.noConflict = function (r) {
+          if (window.jQuery)
+            return (
+              (jQuery = window.jQuery),
+              ($ = window.jQuery),
+              (customHeadScripts = !0),
+              jQuery.noConflict
+            );
+        }),
+        (jQuery.ready = function (r) {
+          jqueryParams = [...jqueryParams, r];
+        }),
+        ($.ready = function (r) {
+          jqueryParams = [...jqueryParams, r];
+        }),
+        (jQuery.load = function (r) {
+          jqueryParams = [...jqueryParams, r];
+        }),
+        ($.load = function (r) {
+          jqueryParams = [...jqueryParams, r];
+        }),
+        (jQuery.fn.ready = function (r) {
+          jqueryParams = [...jqueryParams, r];
+        }),
+        ($.fn.ready = function (r) {
+          jqueryParams = [...jqueryParams, r];
+        });
+    </script>
+    <!-- This site is optimized with the Yoast SEO plugin v23.4 - https://yoast.com/wordpress/plugins/seo/ -->
+    <title>
+      Staying Ahead in the Customs Broker Industry: The Intersection of
+      Technology and Exceptional Customer Service at A Customs Brokerage - A
+      Customs Brokerage
+    </title>
+    <meta
+      name="description"
+      content="At A Customs Brokerage, we understand the importance of staying at the forefront of technology in the customs broker industry."
+    />
+    <link rel="canonical" href="index.html" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:title"
+      content="Staying Ahead in the Customs Broker Industry: The Intersection of Technology and Exceptional Customer Service at A Customs Brokerage - A Customs Brokerage"
+    />
+    <meta
+      property="og:description"
+      content="At A Customs Brokerage, we understand the importance of staying at the forefront of technology in the customs broker industry."
+    />
+    <meta
+      property="og:url"
+      content="https://acb-us.com/with-advancements-in-technology-customs-brokers-can-now-offer-clients-a-more-streamlined-efficient-and-cost-effective-customs-clearance-process/"
+    />
+    <meta property="og:site_name" content="A Customs Brokerage" />
+    <meta
+      property="article:published_time"
+      content="2023-03-27T10:21:50+00:00"
+    />
+    <meta
+      property="article:modified_time"
+      content="2023-03-27T10:22:25+00:00"
+    />
+    <meta
+      property="og:image"
+      content="https://acb-us.com/wp-content/uploads/2023/03/Tech-and-Customer-Service-at-A-Customs-Brokerage-1.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:image:type" content="image/png" />
+    <meta name="author" content="acb-user" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="acb-user" />
+    <meta name="twitter:label2" content="Est. reading time" />
+    <meta name="twitter:data2" content="2 minutes" />
+    <script type="application/ld+json" class="yoast-schema-graph">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "WebPage",
+            "@id": "https://acb-us.com/with-advancements-in-technology-customs-brokers-can-now-offer-clients-a-more-streamlined-efficient-and-cost-effective-customs-clearance-process/",
+            "url": "https://acb-us.com/with-advancements-in-technology-customs-brokers-can-now-offer-clients-a-more-streamlined-efficient-and-cost-effective-customs-clearance-process/",
+            "name": "Staying Ahead in the Customs Broker Industry: The Intersection of Technology and Exceptional Customer Service at A Customs Brokerage - A Customs Brokerage",
+            "isPartOf": { "@id": "https://acb-us.com/#website" },
+            "primaryImageOfPage": {
+              "@id": "https://acb-us.com/with-advancements-in-technology-customs-brokers-can-now-offer-clients-a-more-streamlined-efficient-and-cost-effective-customs-clearance-process/#primaryimage"
+            },
+            "image": {
+              "@id": "https://acb-us.com/with-advancements-in-technology-customs-brokers-can-now-offer-clients-a-more-streamlined-efficient-and-cost-effective-customs-clearance-process/#primaryimage"
+            },
+            "thumbnailUrl": "https://acb-us.com/wp-content/uploads/2023/03/Tech-and-Customer-Service-at-A-Customs-Brokerage-1.png",
+            "datePublished": "2023-03-27T10:21:50+00:00",
+            "dateModified": "2023-03-27T10:22:25+00:00",
+            "author": {
+              "@id": "https://acb-us.com/#/schema/person/7c9d6441b4def386d0a52b55e4afe6d7"
+            },
+            "description": "At A Customs Brokerage, we understand the importance of staying at the forefront of technology in the customs broker industry.",
+            "breadcrumb": {
+              "@id": "https://acb-us.com/with-advancements-in-technology-customs-brokers-can-now-offer-clients-a-more-streamlined-efficient-and-cost-effective-customs-clearance-process/#breadcrumb"
+            },
+            "inLanguage": "en-US",
+            "potentialAction": [
+              {
+                "@type": "ReadAction",
+                "target": [
+                  "https://acb-us.com/with-advancements-in-technology-customs-brokers-can-now-offer-clients-a-more-streamlined-efficient-and-cost-effective-customs-clearance-process/"
+                ]
+              }
+            ]
+          },
+          {
+            "@type": "ImageObject",
+            "inLanguage": "en-US",
+            "@id": "https://acb-us.com/with-advancements-in-technology-customs-brokers-can-now-offer-clients-a-more-streamlined-efficient-and-cost-effective-customs-clearance-process/#primaryimage",
+            "url": "https://acb-us.com/wp-content/uploads/2023/03/Tech-and-Customer-Service-at-A-Customs-Brokerage-1.png",
+            "contentUrl": "https://acb-us.com/wp-content/uploads/2023/03/Tech-and-Customer-Service-at-A-Customs-Brokerage-1.png",
+            "width": 1200,
+            "height": 800
+          },
+          {
+            "@type": "BreadcrumbList",
+            "@id": "https://acb-us.com/with-advancements-in-technology-customs-brokers-can-now-offer-clients-a-more-streamlined-efficient-and-cost-effective-customs-clearance-process/#breadcrumb",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://acb-us.com/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Staying Ahead in the Customs Broker Industry: The Intersection of Technology and Exceptional Customer Service at A Customs Brokerage"
+              }
+            ]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://acb-us.com/#website",
+            "url": "https://acb-us.com/",
+            "name": "A Customs Brokerage",
+            "description": "ACB",
+            "potentialAction": [
+              {
+                "@type": "SearchAction",
+                "target": {
+                  "@type": "EntryPoint",
+                  "urlTemplate": "https://acb-us.com/?s={search_term_string}"
+                },
+                "query-input": {
+                  "@type": "PropertyValueSpecification",
+                  "valueRequired": true,
+                  "valueName": "search_term_string"
+                }
+              }
+            ],
+            "inLanguage": "en-US"
+          },
+          {
+            "@type": "Person",
+            "@id": "https://acb-us.com/#/schema/person/7c9d6441b4def386d0a52b55e4afe6d7",
+            "name": "acb-user",
+            "image": {
+              "@type": "ImageObject",
+              "inLanguage": "en-US",
+              "@id": "https://acb-us.com/#/schema/person/image/",
+              "url": "https://secure.gravatar.com/avatar/7e509d698a2260c3effa5b7d29599309?s=96&d=mm&r=g",
+              "contentUrl": "https://secure.gravatar.com/avatar/7e509d698a2260c3effa5b7d29599309?s=96&d=mm&r=g",
+              "caption": "acb-user"
+            },
+            "url": "https://acb-us.com/author/acb-user/"
+          }
+        ]
+      }
+    </script>
+    <!-- / Yoast SEO plugin. -->
+
+    <link rel="dns-prefetch" href="http://www.googletagmanager.com/" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="A Customs Brokerage &raquo; Feed"
+      href="../feed/index.html"
+    />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="A Customs Brokerage &raquo; Comments Feed"
+      href="../comments/feed/index.html"
+    />
+    <link rel="dns-prefetch" href="http://www.googletagmanager.com/" />
+    <link rel="dns-prefetch" href="http://cdnjs.cloudflare.com/" />
+    <link rel="dns-prefetch" href="http://www.google.com/" />
+    <link rel="dns-prefetch" href="http://fonts.gstatic.com/" />
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="A Customs Brokerage &raquo; Staying Ahead in the Customs Broker Industry: The Intersection of Technology and Exceptional Customer Service at A Customs Brokerage Comments Feed"
+      href="feed/index.html"
+    />
+    <link
+      rel="stylesheet"
+      href="../wp-content/cache/swift-performance/acb-us.com/css/25afb109b36a91846da7966a334675c0.css"
+      media="all"
+    />
+    <meta content="Divi v.4.14.7" name="generator" />
+
+    <link
+      rel="preload"
+      id="divi-dynamic-css"
+      href="../wp-content/et-cache/4293/et-divi-dynamic-tb-325-tb-182-4293.css"
+      as="style"
+      media="all"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+
+    <script
+      type="text/javascript"
+      src="../wp-content/plugins/divi-areas-pro/scripts/ie-compat.min.js"
+      id="dap-ie-js"
+    ></script>
+
+    <!-- Google tag (gtag.js) snippet added by Site Kit -->
+
+    <!-- Google Analytics snippet added by Site Kit -->
+    <script
+      type="text/javascript"
+      src="https://www.googletagmanager.com/gtag/js?id=GT-TQDJHXQC"
+      id="google_gtagjs-js"
+      async
+    ></script>
+    <script type="text/javascript" id="google_gtagjs-js-after">
+      /* <![CDATA[ */
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("set", "linker", { domains: ["acb-us.com"] });
+      gtag("js", new Date());
+      gtag("set", "developer_id.dZTNiMT", true);
+      gtag("config", "GT-TQDJHXQC");
+      /* ]]> */
+    </script>
+
+    <!-- End Google tag (gtag.js) snippet added by Site Kit -->
+    <link rel="https://api.w.org/" href="../wp-json/index.html" />
+    <link
+      rel="alternate"
+      title="JSON"
+      type="application/json"
+      href="../wp-json/wp/v2/posts/4293.json"
+    />
+    <link
+      rel="EditURI"
+      type="application/rsd+xml"
+      title="RSD"
+      href="../xmlrpc0db0.php?rsd"
+    />
+
+    <link rel="shortlink" href="../indexff78.html?p=4293" />
+    <link
+      rel="alternate"
+      title="oEmbed (JSON)"
+      type="application/json+oembed"
+      href="../wp-json/oembed/1.0/embed8537.json?url=https%3A%2F%2Facb-us.com%2Fwith-advancements-in-technology-customs-brokers-can-now-offer-clients-a-more-streamlined-efficient-and-cost-effective-customs-clearance-process%2F"
+    />
+    <link
+      rel="alternate"
+      title="oEmbed (XML)"
+      type="text/xml+oembed"
+      href="../wp-json/oembed/1.0/embed3bb0?url=https%3A%2F%2Facb-us.com%2Fwith-advancements-in-technology-customs-brokers-can-now-offer-clients-a-more-streamlined-efficient-and-cost-effective-customs-clearance-process%2F&amp;format=xml"
+    />
+    <meta name="generator" content="Site Kit by Google 1.135.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-NVXPRMV");
+    </script>
+    <!-- End Google Tag Manager -->
+    <link
+      rel="icon"
+      href="../wp-content/uploads/2023/12/cropped-Untitled-design-11-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      href="../wp-content/uploads/2023/12/cropped-Untitled-design-11-192x192.png"
+      sizes="192x192"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="../wp-content/uploads/2023/12/cropped-Untitled-design-11-180x180.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="https://acb-us.com/wp-content/uploads/2023/12/cropped-Untitled-design-11-270x270.png"
+    />
+
+    <link
+      rel="preload"
+      as="style"
+      id="et-core-unified-tb-325-tb-182-deferred-4293-cached-inline-styles"
+      href="../wp-content/et-cache/4293/et-core-unified-tb-325-tb-182-deferred-4293.mind6e7.css?ver=1731588261"
+      onload="this.onload=null;this.rel='stylesheet';"
+    />
+  </head>
+  <body
+    class="post-template-default single single-post postid-4293 single-format-standard et-tb-has-template et-tb-has-header et-tb-has-footer et_pb_button_helper_class et_cover_background et_pb_gutter windows et_pb_gutters3 et_right_sidebar et_divi_theme et-db"
+  >
+    <div id="page-container">
+      <div id="et-boc" class="et-boc">
+        <header class="et-l et-l--header">
+          <div class="et_builder_inner_content et_pb_gutters3">
+            <div
+              class="et_pb_section et_pb_section_0_tb_header et_section_regular"
+            >
+              <div
+                class="et_pb_row et_pb_row_0_tb_header et_pb_equal_columns et_pb_gutters1 et_pb_row--with-menu"
+              >
+                <div
+                  class="et_pb_column et_pb_column_3_4 et_pb_column_0_tb_header et_pb_css_mix_blend_mode_passthrough et_pb_column--with-menu"
+                >
+                  <div
+                    class="et_pb_module et_pb_menu et_pb_menu_0_tb_header Header_custom_menu et_pb_bg_layout_light et_pb_text_align_left et_dropdown_animation_fade et_pb_menu--with-logo et_pb_menu--style-left_aligned"
+                  >
+                    <div class="et_pb_menu_inner_container clearfix">
+                      <div class="et_pb_menu__logo-wrap">
+                        <div class="et_pb_menu__logo">
+                          <a href="../index.html"
+                            ><img
+                              fetchpriority="high"
+                              decoding="async"
+                              width="1394"
+                              height="696"
+                              src="../wp-content/uploads/2023/07/ACB-BROWN-LOGO.png"
+                              alt=""
+                              srcset="
+                                https://acb-us.com/wp-content/uploads/2023/07/ACB-BROWN-LOGO.png          1394w,
+                                https://acb-us.com/wp-content/uploads/2023/07/ACB-BROWN-LOGO-1280x639.png 1280w,
+                                https://acb-us.com/wp-content/uploads/2023/07/ACB-BROWN-LOGO-980x489.png   980w,
+                                https://acb-us.com/wp-content/uploads/2023/07/ACB-BROWN-LOGO-480x240.png   480w
+                              "
+                              sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) and (max-width: 1280px) 1280px, (min-width: 1281px) 1394px, 100vw"
+                              class="wp-image-4504"
+                          /></a>
+                        </div>
+                      </div>
+                      <div class="et_pb_menu__wrap">
+                        <div class="et_pb_menu__menu">
+                          <nav class="et-menu-nav">
+                            <ul id="menu-client" class="et-menu nav">
+                              <li
+                                class="et_pb_menu_page_id-1871 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1871"
+                              >
+                                <a>Services</a>
+                                <ul class="sub-menu">
+                                  <li
+                                    class="et_pb_menu_page_id-992 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1941"
+                                  >
+                                    <a
+                                      href="../miami-customs-brokerage/index.html"
+                                      >Customs Brokerage</a
+                                    >
+                                    <ul class="sub-menu">
+                                      <li
+                                        class="et_pb_menu_page_id-1016 menu-item menu-item-type-post_type menu-item-object-page menu-item-1953"
+                                      >
+                                        <a
+                                          href="../us-hts-classification/index.html"
+                                          >HTS Classification</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="et_pb_menu_page_id-998 menu-item menu-item-type-post_type menu-item-object-page menu-item-1943"
+                                      >
+                                        <a href="../us-customs-bonds/index.html"
+                                          >Customs Bonds</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="et_pb_menu_page_id-1002 menu-item menu-item-type-post_type menu-item-object-page menu-item-1942"
+                                      >
+                                        <a href="../us-compliance/index.html"
+                                          >Compliance</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="et_pb_menu_page_id-1000 menu-item menu-item-type-post_type menu-item-object-page menu-item-1944"
+                                      >
+                                        <a
+                                          href="../us-duty-management/index.html"
+                                          >Duty Management</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="et_pb_menu_page_id-994 menu-item menu-item-type-post_type menu-item-object-page menu-item-1945"
+                                      >
+                                        <a
+                                          href="../import-entry-processing/index.html"
+                                          >Import Entry Processing</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="et_pb_menu_page_id-996 menu-item menu-item-type-post_type menu-item-object-page menu-item-1946"
+                                      >
+                                        <a
+                                          href="../us-pga-processing/index.html"
+                                          >PGA Processing</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li
+                                    class="et_pb_menu_page_id-1004 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1948"
+                                  >
+                                    <a
+                                      href="../us-freight-forwarding/index.html"
+                                      >Freight Forwarding</a
+                                    >
+                                    <ul class="sub-menu">
+                                      <li
+                                        class="et_pb_menu_page_id-1006 menu-item menu-item-type-post_type menu-item-object-page menu-item-1949"
+                                      >
+                                        <a href="../ocean-shipping/index.html"
+                                          >Ocean Shipping</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="et_pb_menu_page_id-1008 menu-item menu-item-type-post_type menu-item-object-page menu-item-1947"
+                                      >
+                                        <a
+                                          href="../us-air-cargo-service/index.html"
+                                          >Air Cargo Service</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li
+                                    class="et_pb_menu_page_id-1010 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1954"
+                                  >
+                                    <a href="../us-warehouse/index.html"
+                                      >Warehouse</a
+                                    >
+                                    <ul class="sub-menu">
+                                      <li
+                                        class="et_pb_menu_page_id-1018 menu-item menu-item-type-post_type menu-item-object-page menu-item-1952"
+                                      >
+                                        <a
+                                          href="../us-inventory-management/index.html"
+                                          >Inventory Management </a
+                                        >
+                                      </li>
+                                      <li
+                                        class="et_pb_menu_page_id-1020 menu-item menu-item-type-post_type menu-item-object-page menu-item-1955"
+                                      >
+                                        <a href="../e-commerce/index.html"
+                                          >E-commerce</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="et_pb_menu_page_id-1028 menu-item menu-item-type-post_type menu-item-object-page menu-item-1958"
+                                      >
+                                        <a
+                                          href="../us-order-management/index.html"
+                                          >Order Management</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="et_pb_menu_page_id-1030 menu-item menu-item-type-post_type menu-item-object-page menu-item-1956"
+                                      >
+                                        <a
+                                          href="../us-fba-preparation/index.html"
+                                          >FBA Preparation</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li
+                                    class="et_pb_menu_page_id-1032 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1961"
+                                  >
+                                    <a
+                                      href="../us-trucking-logistics/index.html"
+                                      >Trucking Logistics</a
+                                    >
+                                    <ul class="sub-menu">
+                                      <li
+                                        class="et_pb_menu_page_id-1038 menu-item menu-item-type-post_type menu-item-object-page menu-item-1960"
+                                      >
+                                        <a
+                                          href="../us-cross-border-shipping/index.html"
+                                          >Cross-Border Shipping</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="et_pb_menu_page_id-1034 menu-item menu-item-type-post_type menu-item-object-page menu-item-1963"
+                                      >
+                                        <a
+                                          href="../us-nationwide-full-trailer-load-ftl/index.html"
+                                          >Nationwide Full Trailer Load / FTL</a
+                                        >
+                                      </li>
+                                      <li
+                                        class="et_pb_menu_page_id-1036 menu-item menu-item-type-post_type menu-item-object-page menu-item-1962"
+                                      >
+                                        <a
+                                          href="../local-lcl-final-mile/index.html"
+                                          >Local LCL – Final Mile</a
+                                        >
+                                      </li>
+                                    </ul>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li
+                                class="et_pb_menu_page_id-32 menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1895"
+                              >
+                                <a href="../about/index.html">About</a>
+                                <ul class="sub-menu">
+                                  <li
+                                    class="et_pb_menu_page_id-536 menu-item menu-item-type-post_type menu-item-object-page menu-item-4947"
+                                  >
+                                    <a href="../careers/index.html">Careers</a>
+                                  </li>
+                                </ul>
+                              </li>
+                              <li
+                                class="et_pb_menu_page_id-2573 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2573"
+                              >
+                                <a>Resources</a>
+                                <ul class="sub-menu">
+                                  <li
+                                    class="et_pb_menu_page_id-2210 menu-item menu-item-type-post_type menu-item-object-page menu-item-2218"
+                                  >
+                                    <a href="../blog/index.html">Blog</a>
+                                  </li>
+                                  <li
+                                    class="et_pb_menu_page_id-2192 menu-item menu-item-type-post_type menu-item-object-page menu-item-2205"
+                                  >
+                                    <a href="../faq/index.html">FAQ</a>
+                                  </li>
+                                  <li
+                                    class="et_pb_menu_page_id-1254 menu-item menu-item-type-post_type menu-item-object-page menu-item-1897"
+                                  >
+                                    <a href="../resources/index.html"
+                                      >Gov Agency Links</a
+                                    >
+                                  </li>
+                                  <li
+                                    class="et_pb_menu_page_id-5632 menu-item menu-item-type-post_type menu-item-object-page menu-item-5641"
+                                  >
+                                    <a href="../acb-forms/index.html"
+                                      >ACB Forms</a
+                                    >
+                                  </li>
+                                  <li
+                                    class="et_pb_menu_page_id-3513 menu-item menu-item-type-custom menu-item-object-custom menu-item-3513"
+                                  >
+                                    <a href="http://www.cargosphere.net/"
+                                      >FMC Published Tariff Admin</a
+                                    >
+                                  </li>
+                                </ul>
+                              </li>
+                              <li
+                                class="et_pb_menu_page_id-36 menu-item menu-item-type-post_type menu-item-object-page menu-item-1898"
+                              >
+                                <a href="../contact/index.html">Contact</a>
+                              </li>
+                              <li
+                                class="et_pb_menu_page_id-1899 menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1899"
+                              >
+                                <a>Tracking Tools</a>
+                                <ul class="sub-menu">
+                                  <li
+                                    class="et_pb_menu_page_id-4839 menu-item menu-item-type-post_type menu-item-object-page menu-item-4845"
+                                  >
+                                    <a href="../contact-2/index.html"
+                                      >ACBInsight Registration</a
+                                    >
+                                  </li>
+                                  <li
+                                    class="et_pb_menu_page_id-1902 menu-item menu-item-type-custom menu-item-object-custom menu-item-1902"
+                                  >
+                                    <a
+                                      target="_blank"
+                                      rel="noopener"
+                                      href="https://app.extensiv.com/login"
+                                      >Warehouse Tracking</a
+                                    >
+                                  </li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </nav>
+                        </div>
+
+                        <div class="et_mobile_nav_menu">
+                          <div class="mobile_nav closed">
+                            <span class="mobile_menu_bar"></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="et_pb_column et_pb_column_1_4 et_pb_column_1_tb_header menu_number_blurb__column et_pb_css_mix_blend_mode_passthrough et-last-child"
+                >
+                  <div
+                    class="et_pb_module et_pb_blurb et_pb_blurb_0_tb_header menu_number_blurb et_clickable et_pb_text_align_left et_pb_blurb_position_left et_pb_bg_layout_light"
+                  >
+                    <div class="et_pb_blurb_content">
+                      <div class="et_pb_main_blurb_image">
+                        <span class="et_pb_image_wrap"
+                          ><span
+                            class="et-waypoint et_pb_animation_top et_pb_animation_top_tablet et_pb_animation_top_phone et-pb-icon et-pb-icon-circle"
+                            ></span
+                          ></span
+                        >
+                      </div>
+                      <div class="et_pb_blurb_container">
+                        <h4 class="et_pb_module_header">
+                          <span>305 - 805 - 6797</span>
+                        </h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div id="et-main-area">
+          <div id="main-content">
+            <div class="container">
+              <div id="content-area" class="clearfix">
+                <div id="left-area">
+                  <article
+                    id="post-4293"
+                    class="et_pb_post post-4293 post type-post status-publish format-standard has-post-thumbnail hentry category-customer-service category-technology category-uncategorized"
+                  >
+                    <div class="et_post_meta_wrapper">
+                      <h1 class="entry-title">
+                        Staying Ahead in the Customs Broker Industry: The
+                        Intersection of Technology and Exceptional Customer
+                        Service at A Customs Brokerage
+                      </h1>
+
+                      <p class="post-meta">
+                        <span class="published">Mar 27, 2023</span>
+                      </p>
+                      <img
+                        src="../wp-content/uploads/2023/03/Tech-and-Customer-Service-at-A-Customs-Brokerage-1-1080x675.png"
+                        alt=""
+                        class=""
+                        width="1080"
+                        height="675"
+                        srcset="
+                          https://acb-us.com/wp-content/uploads/2023/03/Tech-and-Customer-Service-at-A-Customs-Brokerage-1-1080x675.png 1080w,
+                          https://acb-us.com/wp-content/uploads/2023/03/Tech-and-Customer-Service-at-A-Customs-Brokerage-1-980x653.png   980w,
+                          https://acb-us.com/wp-content/uploads/2023/03/Tech-and-Customer-Service-at-A-Customs-Brokerage-1-480x320.png   480w
+                        "
+                        sizes="(min-width: 0px) and (max-width: 480px) 480px, (min-width: 481px) and (max-width: 980px) 980px, (min-width: 981px) 1080px, 100vw"
+                      />
+                    </div>
+
+                    <div class="entry-content">
+                      <p>
+                        With almost 45 years of experience in the industry, at A
+                        Customs Brokerage, we have seen firsthand how technology
+                        has transformed the customs broker industry, and how it
+                        has become crucial to providing exceptional customer
+                        service. With advancements in technology, customs
+                        brokers can now offer clients a more streamlined,
+                        efficient, and cost-effective customs clearance process.
+                      </p>
+
+                      <p>
+                        At A Customs Brokerage, we understand the importance of
+                        staying at the forefront of technology in the customs
+                        broker industry. That&#8217;s why we have invested in
+                        cutting-edge technology solutions that enable us to
+                        provide our clients with real-time tracking and
+                        visibility of their shipments. With our state-of-the-art
+                        software, clients can access up-to-date information on
+                        their shipments&#8217; status at any time, from anywhere
+                        in the world.
+                      </p>
+
+                      <p>
+                        In addition to providing real-time tracking and
+                        visibility, technology has also allowed us to streamline
+                        the customs clearance process. With electronic
+                        submission of customs documents and automated processes,
+                        we can significantly reduce processing times, which
+                        translates into faster customs clearance for our
+                        clients. By leveraging technology, we can help our
+                        clients save time and money, and improve their overall
+                        supply chain efficiency.
+                      </p>
+
+                      <blockquote
+                        class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow"
+                      >
+                        <p></p>
+                      </blockquote>
+
+                      <p>
+                        But technology is only part of the equation. At A
+                        Customs Brokerage, we understand that exceptional
+                        customer service goes beyond just technology.
+                        That&#8217;s why we combine our cutting-edge technology
+                        solutions with personalized attention and responsiveness
+                        to our clients&#8217; needs. By taking the time to
+                        understand our clients&#8217; businesses and providing
+                        tailored solutions to meet their unique requirements, we
+                        can offer a level of service that sets us apart from our
+                        competitors.
+                      </p>
+
+                      <p>
+                        In conclusion, the customs broker industry has undergone
+                        significant changes in the technology landscape, and A
+                        Customs Brokerage has embraced these changes to provide
+                        exceptional customer service to our clients. By
+                        leveraging cutting-edge technology solutions, we can
+                        offer real-time tracking and visibility, streamline the
+                        customs clearance process, and improve supply chain
+                        efficiency. But we also understand that technology alone
+                        is not enough. By combining technology with personalized
+                        attention and responsiveness to our clients&#8217;
+                        needs, we can build trust, loyalty, and long-term
+                        partnerships with our clients.
+                      </p>
+                    </div>
+                    <div class="et_post_meta_wrapper"></div>
+                  </article>
+                </div>
+
+                <div id="sidebar">
+                  <div id="search-2" class="et_pb_widget widget_search">
+                    <form
+                      role="search"
+                      method="get"
+                      id="searchform"
+                      class="searchform"
+                      action="https://acb-us.com/"
+                    >
+                      <div>
+                        <label class="screen-reader-text" for="s"
+                          >Search for:</label
+                        >
+                        <input type="text" value="" name="s" id="s" />
+                        <input type="submit" id="searchsubmit" value="Search" />
+                      </div>
+                    </form>
+                  </div>
+                  <div
+                    id="recent-posts-2"
+                    class="et_pb_widget widget_recent_entries"
+                  >
+                    <h4 class="widgettitle">Recent Posts</h4>
+                    <ul>
+                      <li>
+                        <a
+                          href="../a-customs-brokerage-extending-our-commitment-to-service/index.html"
+                          >A Customs Brokerage: Extending Our Commitment to
+                          Service</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../us-ceramic-tile-manufacturers-seek-ad-cvd-duties-on-imports-of-indian-ceramic-tile/index.html"
+                          >US Ceramic Tile Manufacturers Seek AD/CVD Duties on
+                          imports of Indian Ceramic Tile</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../the-importance-of-country-of-origin-marking-on-shipments-especially-flooring/index.html"
+                          >The Importance of Country of Origin Marking on
+                          Shipments, Especially Flooring</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../the-power-of-personal-connections-an-interview-with-gabriel-and-fernando-rodriguez-at-the-coverings-trade-show/index.html"
+                          >The Power of Personal Connections: An Interview with
+                          Gabriel and Fernando Rodriguez at the Coverings Trade
+                          Show</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="../podcast-navigating-the-perils-of-damaged-containers-proactive-steps-to-avoid-overdue-invoices/index.html"
+                          >PODCAST: Navigating the Perils of Damaged Containers:
+                          Proactive Steps to Avoid Overdue Invoices</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div
+                    id="recent-comments-2"
+                    class="et_pb_widget widget_recent_comments"
+                  >
+                    <h4 class="widgettitle">Recent Comments</h4>
+                    <ul id="recentcomments"></ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <footer class="et-l et-l--footer">
+            <div class="et_builder_inner_content et_pb_gutters3">
+              <div
+                class="et_pb_section et_pb_section_2_tb_footer et_section_regular"
+              >
+                <div class="et_pb_row et_pb_row_0_tb_footer">
+                  <div
+                    class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_footer et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty"
+                  ></div>
+                </div>
+              </div>
+              <div
+                class="et_pb_section et_pb_section_4_tb_footer et_section_regular"
+              >
+                <div class="et_pb_row et_pb_row_1_tb_footer">
+                  <div
+                    class="et_pb_column et_pb_column_4_4 et_pb_column_1_tb_footer et_pb_css_mix_blend_mode_passthrough et-last-child"
+                  >
+                    <div
+                      class="et_pb_module et_pb_text et_pb_text_0_tb_footer et_pb_text_align_left et_pb_bg_layout_light"
+                    >
+                      <div class="et_pb_text_inner">Let's Connect</div>
+                    </div>
+                    <div
+                      id="et_pb_contact_form_0"
+                      class="et_pb_with_border et_pb_module et_pb_contact_form_0_tb_footer et_pb_recaptcha_enabled et_pb_contact_form_container clearfix"
+                      data-form_unique_num="0"
+                      data-form_unique_id="62b45cad-4ab5-4ce3-9cbd-3271f2540f63"
+                    >
+                      <div class="et-pb-contact-message"></div>
+
+                      <div class="et_pb_contact">
+                        <form
+                          class="et_pb_contact_form clearfix"
+                          method="post"
+                          action="https://acb-us.com/with-advancements-in-technology-customs-brokers-can-now-offer-clients-a-more-streamlined-efficient-and-cost-effective-customs-clearance-process/"
+                        >
+                          <p
+                            class="et_pb_contact_field et_pb_contact_field_0_tb_footer et_pb_contact_field_last"
+                            data-id="name"
+                            data-type="input"
+                          >
+                            <label
+                              for="et_pb_contact_name_0"
+                              class="et_pb_contact_form_label"
+                              >Name</label
+                            >
+                            <input
+                              type="text"
+                              id="et_pb_contact_name_0"
+                              class="input"
+                              value=""
+                              name="et_pb_contact_name_0"
+                              data-required_mark="required"
+                              data-field_type="input"
+                              data-original_id="name"
+                              placeholder="Name"
+                            />
+                          </p>
+                          <p
+                            class="et_pb_contact_field et_pb_contact_field_1_tb_footer et_pb_contact_field_last"
+                            data-id="email"
+                            data-type="email"
+                          >
+                            <label
+                              for="et_pb_contact_email_0"
+                              class="et_pb_contact_form_label"
+                              >Business Email Address</label
+                            >
+                            <input
+                              type="text"
+                              id="et_pb_contact_email_0"
+                              class="input"
+                              value=""
+                              name="et_pb_contact_email_0"
+                              data-required_mark="required"
+                              data-field_type="email"
+                              data-original_id="email"
+                              placeholder="Business Email Address"
+                            />
+                          </p>
+                          <p
+                            class="et_pb_contact_field et_pb_contact_field_2_tb_footer et_pb_contact_field_last"
+                            data-id="company"
+                            data-type="input"
+                          >
+                            <label
+                              for="et_pb_contact_company_0"
+                              class="et_pb_contact_form_label"
+                              >Company</label
+                            >
+                            <input
+                              type="text"
+                              id="et_pb_contact_company_0"
+                              class="input"
+                              value=""
+                              name="et_pb_contact_company_0"
+                              data-required_mark="required"
+                              data-field_type="input"
+                              data-original_id="company"
+                              placeholder="Company"
+                            />
+                          </p>
+                          <p
+                            class="et_pb_contact_field et_pb_contact_field_3_tb_footer et_pb_contact_field_last"
+                            data-id="your_position"
+                            data-type="input"
+                          >
+                            <label
+                              for="et_pb_contact_your_position_0"
+                              class="et_pb_contact_form_label"
+                              >Your Position
+                            </label>
+                            <input
+                              type="text"
+                              id="et_pb_contact_your_position_0"
+                              class="input"
+                              value=""
+                              name="et_pb_contact_your_position_0"
+                              data-required_mark="required"
+                              data-field_type="input"
+                              data-original_id="your_position"
+                              placeholder="Your Position "
+                            />
+                          </p>
+                          <p
+                            class="et_pb_contact_field et_pb_contact_field_4_tb_footer et_pb_contact_field_last"
+                            data-id="message"
+                            data-type="text"
+                          >
+                            <label
+                              for="et_pb_contact_message_0"
+                              class="et_pb_contact_form_label"
+                              >Tell us how we can help...</label
+                            >
+                            <textarea
+                              name="et_pb_contact_message_0"
+                              id="et_pb_contact_message_0"
+                              class="et_pb_contact_message input"
+                              data-required_mark="not_required"
+                              data-field_type="text"
+                              data-original_id="message"
+                              placeholder="Tell us how we can help..."
+                            ></textarea>
+                          </p>
+                          <input
+                            type="hidden"
+                            value="et_contact_proccess"
+                            name="et_pb_contactform_submit_0"
+                          />
+                          <div class="et_contact_bottom_container">
+                            <button
+                              type="submit"
+                              name="et_builder_submit_button"
+                              class="et_pb_contact_submit et_pb_button"
+                            >
+                              Submit
+                            </button>
+                          </div>
+                          <input
+                            type="hidden"
+                            id="_wpnonce-et-pb-contact-form-submitted-0"
+                            name="_wpnonce-et-pb-contact-form-submitted-0"
+                            value="53ac0f4e19"
+                          /><input
+                            type="hidden"
+                            name="_wp_http_referer"
+                            value="/with-advancements-in-technology-customs-brokers-can-now-offer-clients-a-more-streamlined-efficient-and-cost-effective-customs-clearance-process/"
+                          />
+                        </form>
+                      </div>
+                    </div>
+                    <div
+                      class="et_pb_module et_pb_text et_pb_text_1_tb_footer et_pb_text_align_left et_pb_bg_layout_light"
+                    >
+                      <div class="et_pb_text_inner">
+                        <p>
+                          This site is protected by reCAPTCHA and the Google
+                          <a href="https://policies.google.com/privacy"
+                            >Privacy Policy</a
+                          >
+                          and
+                          <a href="https://policies.google.com/terms"
+                            >Terms of Service</a
+                          >
+                          apply.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="et_pb_section et_pb_section_5_tb_footer et_pb_with_background et_section_regular"
+              >
+                <div class="et_pb_row et_pb_row_2_tb_footer">
+                  <div
+                    class="et_pb_column et_pb_column_1_5 et_pb_column_2_tb_footer et_pb_css_mix_blend_mode_passthrough"
+                  >
+                    <div
+                      class="et_pb_module et_pb_divider et_pb_divider_0_tb_footer et_pb_divider_position_ et_pb_space"
+                    >
+                      <div class="et_pb_divider_internal"></div>
+                    </div>
+                    <div
+                      class="et_pb_module et_pb_text et_pb_text_2_tb_footer et_pb_text_align_left et_pb_bg_layout_light"
+                    >
+                      <div class="et_pb_text_inner"><p>Find Us In</p></div>
+                    </div>
+                  </div>
+                  <div
+                    class="et_pb_column et_pb_column_1_5 et_pb_column_3_tb_footer et_pb_css_mix_blend_mode_passthrough et_pb_column_empty"
+                  ></div>
+                  <div
+                    class="et_pb_column et_pb_column_1_5 et_pb_column_4_tb_footer et_pb_css_mix_blend_mode_passthrough"
+                  >
+                    <div
+                      class="et_pb_module et_pb_divider et_pb_divider_1_tb_footer et_pb_divider_position_ et_pb_space"
+                    >
+                      <div class="et_pb_divider_internal"></div>
+                    </div>
+                    <div
+                      class="et_pb_module et_pb_text et_pb_text_3_tb_footer et_pb_text_align_left et_pb_bg_layout_light"
+                    >
+                      <div class="et_pb_text_inner"><p>Forms</p></div>
+                    </div>
+                  </div>
+                  <div
+                    class="et_pb_column et_pb_column_1_5 et_pb_column_5_tb_footer et_pb_css_mix_blend_mode_passthrough et_pb_column_empty"
+                  ></div>
+                  <div
+                    class="et_pb_column et_pb_column_1_5 et_pb_column_6_tb_footer et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty"
+                  ></div>
+                </div>
+                <div
+                  class="et_pb_row et_pb_row_4_tb_footer et_pb_equal_columns et_pb_gutters2"
+                >
+                  <div
+                    class="et_pb_column et_pb_column_1_3 et_pb_column_7_tb_footer et_pb_css_mix_blend_mode_passthrough"
+                  >
+                    <div
+                      class="et_pb_module et_pb_text et_pb_text_4_tb_footer et_pb_text_align_left et_pb_bg_layout_light"
+                    >
+                      <div class="et_pb_text_inner">
+                        <p>
+                          <span
+                            ><span
+                              class="ui-provider ed bgl bgm bgn bgo bgp bgq bgr bgs bgt bgu bgv bgw bgx bgy bgz bha bhb bhc bhd bhe bhf bhg bhh bhi bhj bhk bhl bhm bhn bho bhp bhq bhr bhs"
+                              dir="ltr"
+                              >Miami, FL</span
+                            ></span
+                          >
+                        </p>
+                        <p>
+                          <span
+                            ><span
+                              class="ui-provider ed bgl bgm bgn bgo bgp bgq bgr bgs bgt bgu bgv bgw bgx bgy bgz bha bhb bhc bhd bhe bhf bhg bhh bhi bhj bhk bhl bhm bhn bho bhp bhq bhr bhs"
+                              dir="ltr"
+                              >Jacksonville, FL</span
+                            ></span
+                          >
+                        </p>
+                        <p>
+                          <span
+                            ><span
+                              class="ui-provider ed bgl bgm bgn bgo bgp bgq bgr bgs bgt bgu bgv bgw bgx bgy bgz bha bhb bhc bhd bhe bhf bhg bhh bhi bhj bhk bhl bhm bhn bho bhp bhq bhr bhs"
+                              dir="ltr"
+                              >Savannah, GA</span
+                            ></span
+                          >
+                        </p>
+                        <p>
+                          <span
+                            ><span
+                              class="ui-provider ed bgl bgm bgn bgo bgp bgq bgr bgs bgt bgu bgv bgw bgx bgy bgz bha bhb bhc bhd bhe bhf bhg bhh bhi bhj bhk bhl bhm bhn bho bhp bhq bhr bhs"
+                              dir="ltr"
+                            ></span
+                          ></span>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="et_pb_column et_pb_column_1_3 et_pb_column_8_tb_footer et_pb_css_mix_blend_mode_passthrough"
+                  >
+                    <div
+                      class="et_pb_module et_pb_text et_pb_text_5_tb_footer et_pb_text_align_left et_pb_bg_layout_light"
+                    >
+                      <div class="et_pb_text_inner">
+                        <p>
+                          <a
+                            href="https://drive.google.com/file/d/1ckAwjAtL07PCzidtATHg6CNPkVcOHMRP/view?usp=sharing"
+                            >Terms and Conditions</a
+                          >
+                        </p>
+                        <p>
+                          <a
+                            href="https://drive.google.com/file/d/1DO3nPIo2zwUUaB75GbfdAPoLIq15bMoM/view?usp=sharing"
+                            >Power of Attorney Import</a
+                          >
+                        </p>
+                        <p>
+                          <a
+                            href="https://drive.google.com/file/d/1UjsLlLBMJTvgfslU1PQKkUAfGFXuCyAz/view?usp=sharing"
+                            >Power of Attorney Export</a
+                          >
+                        </p>
+                        <p>
+                          <a
+                            href="https://drive.google.com/file/d/1m845hFrgOP0SmR6twhC6lWFcMqKGr26S/view?usp=sharing"
+                            >Vehicle Export Power of Attorney</a
+                          >
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="et_pb_column et_pb_column_1_3 et_pb_column_9_tb_footer et_pb_css_mix_blend_mode_passthrough et-last-child et_pb_column_empty"
+                  ></div>
+                </div>
+              </div>
+              <div
+                class="et_pb_section et_pb_section_7_tb_footer et_section_regular"
+              >
+                <div class="et_pb_row et_pb_row_5_tb_footer">
+                  <div
+                    class="et_pb_column et_pb_column_4_4 et_pb_column_10_tb_footer et_pb_css_mix_blend_mode_passthrough et-last-child"
+                  >
+                    <div
+                      class="et_pb_module et_pb_text et_pb_text_6_tb_footer et_pb_text_align_center et_pb_bg_layout_light"
+                    >
+                      <div class="et_pb_text_inner">
+                        <p>
+                          <a
+                            href="../privacy-policy/index.html"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Privacy Policy</a
+                          >. Copyright © 2021 A Customs Brokerage, Inc
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var et_link_options_data = [
+        {
+          class: "et_pb_blurb_0_tb_header",
+          url: "tel:3058056797",
+          target: "_self",
+        },
+      ];
+    </script>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-NVXPRMV"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <script
+      type="text/javascript"
+      src="../wp-includes/js/dist/hooks.min.js"
+      id="wp-hooks-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../wp-includes/js/dist/i18n.min.js"
+      id="wp-i18n-js"
+    ></script>
+    <script type="text/javascript" id="wp-i18n-js-after">
+      /* <![CDATA[ */
+      wp.i18n.setLocaleData({ "text direction\u0004ltr": ["ltr"] });
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="../wp-content/plugins/contact-form-7/includes/swv/js/index.js"
+      id="swv-js"
+    ></script>
+    <script type="text/javascript" id="contact-form-7-js-extra">
+      /* <![CDATA[ */
+      /*swift-is-localization*/
+      var wpcf7 = {
+        api: {
+          root: "https:\/\/acb-us.com\/wp-json\/",
+          namespace: "contact-form-7\/v1",
+        },
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="../wp-content/plugins/contact-form-7/includes/js/index.js"
+      id="contact-form-7-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../wp-includes/js/jquery/jquery.min.js"
+      id="jquery-core-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../wp-includes/js/jquery/jquery-migrate.min.js"
+      id="jquery-migrate-js"
+    ></script>
+    <script type="text/javascript" id="jquery-js-after">
+      /* <![CDATA[ */
+      jqueryParams.length &&
+        $.each(jqueryParams, function (e, r) {
+          if ("function" == typeof r) {
+            var n = String(r);
+            n.replace("$", "jQuery");
+            var a = new Function("return " + n)();
+            $(document).ready(a);
+          }
+        });
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="../wp-content/plugins/divi-areas-pro/scripts/front.min.js"
+      id="js-divi-area-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
+      id="js-gsap-0-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      id="js-gsap-1-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../wp-includes/js/comment-reply.min.js"
+      id="comment-reply-js"
+      async="async"
+      data-wp-strategy="async"
+    ></script>
+    <script type="text/javascript" id="divi-custom-script-js-extra">
+      /* <![CDATA[ */
+      /*swift-is-localization*/
+      var DIVI = { item_count: "%d Item", items_count: "%d Items" };
+      var et_builder_utils_params = {
+        condition: { diviTheme: true, extraTheme: false },
+        scrollLocations: ["app", "top"],
+        builderScrollLocations: { desktop: "app", tablet: "app", phone: "app" },
+        onloadScrollLocation: "app",
+        builderType: "fe",
+      };
+      var et_frontend_scripts = {
+        builderCssContainerPrefix: "#et-boc",
+        builderCssLayoutPrefix: "#et-boc .et-l",
+      };
+      var et_pb_custom = {
+        ajaxurl: "https:\/\/acb-us.com\/wp-admin\/admin-ajax.php",
+        images_uri: "https:\/\/acb-us.com\/wp-content\/themes\/Divi\/images",
+        builder_images_uri:
+          "https:\/\/acb-us.com\/wp-content\/themes\/Divi\/includes\/builder\/images",
+        et_frontend_nonce: "cc139d0bb2",
+        subscription_failed:
+          "Please, check the fields below to make sure you entered the correct information.",
+        et_ab_log_nonce: "5dd5900a70",
+        fill_message: "Please, fill in the following fields:",
+        contact_error_message: "Please, fix the following errors:",
+        invalid: "Invalid email",
+        captcha: "Captcha",
+        prev: "Prev",
+        previous: "Previous",
+        next: "Next",
+        wrong_captcha: "You entered the wrong number in captcha.",
+        wrong_checkbox: "Checkbox",
+        ignore_waypoints: "no",
+        is_divi_theme_used: "1",
+        widget_search_selector: ".widget_search",
+        ab_tests: [],
+        is_ab_testing_active: "",
+        page_id: "4293",
+        unique_test_id: "",
+        ab_bounce_rate: "5",
+        is_cache_plugin_active: "yes",
+        is_shortcode_tracking: "",
+        tinymce_uri: "",
+      };
+      var et_pb_box_shadow_elements = [];
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="../wp-content/themes/Divi/js/scripts.min.js"
+      id="divi-custom-script-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../wp-content/themes/Divi/core/admin/js/es6-promise.auto.min.js"
+      id="es6-promise-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://www.google.com/recaptcha/api.js?render=6LfgPzMaAAAAAFAboobbSwAEtmQXoFmWCE-FNV4X&amp;ver=4.14.7"
+      id="et-recaptcha-v3-js"
+    ></script>
+    <script type="text/javascript" id="et-core-api-spam-recaptcha-js-extra">
+      /* <![CDATA[ */
+      /*swift-is-localization*/
+      var et_core_api_spam_recaptcha = {
+        site_key: "6LfgPzMaAAAAAFAboobbSwAEtmQXoFmWCE-FNV4X",
+        page_action: {
+          action:
+            "with_advancements_in_technology_customs_brokers_can_now_offer_clients_a_more_streamlined_efficient_and_cost_effective_customs_clearance_process",
+        },
+      };
+      /* ]]> */
+    </script>
+    <script
+      type="text/javascript"
+      src="../wp-content/themes/Divi/core/admin/js/recaptcha.js"
+      id="et-core-api-spam-recaptcha-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../wp-content/themes/Divi/includes/builder/feature/dynamic-assets/assets/js/jquery.fitvids.js"
+      id="fitvids-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../wp-content/plugins/dwd-map-extended/scripts/frontend-bundle.min.js"
+      id="dwd-map-extended-frontend-bundle-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../wp-content/plugins/supreme-modules-pro-for-divi/scripts/frontend-bundle.min.js"
+      id="supreme-modules-pro-for-divi-frontend-bundle-js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="../wp-content/themes/Divi/core/admin/js/common.js"
+      id="et-core-common-js"
+    ></script>
+  </body>
+</html>
